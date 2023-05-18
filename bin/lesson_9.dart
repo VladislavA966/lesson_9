@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:math';
 
 void main() {
   double usd = 87;
@@ -10,7 +9,7 @@ void main() {
   double dirham = 23;
 
   print(
-      'Доброе пожаловать!\n Курс на сегодня: \nUSD -$usd \nKZT -$kzt \nEUR - $eur \nRUB - $rub  \nYUAN -$chin \nDIRKHAM -$dirham');
+      'Доброе пожаловать!\nКурс на сегодня: \nUSD -$usd \nKZT -$kzt \nEUR - $eur \nRUB - $rub  \nYUAN -$chin \nDIRKHAM -$dirham');
   print(
       '1) Хотите обменять другую валюту на сом? \n2) Хотите обменять сом на другую валюту?');
   String choice = stdin.readLineSync()!;
@@ -31,7 +30,7 @@ void main() {
     } else if (valuta == 'DIRHAM' || valuta == 'dirham') {
       calc(dirham);
     } else {
-      print('Не правальный ввод');
+      print('Неверный ввод');
     }
   } else if (choice == '2') {
     print('Продажа');
@@ -50,10 +49,10 @@ void main() {
     } else if (valuta == 'DIRHAM' || valuta == 'dirham') {
       calc1(dirham);
     } else {
-      print('Неправильный ввод');
+      print('Неверный ввод');
     }
   } else {
-    print('Ошибка');
+    print('Вы можете ввести только 1 или 2');
   }
 }
 
